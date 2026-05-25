@@ -13,8 +13,6 @@ If you enjoy this course, consider:
     * [Thanvir Assif](https://www.youtube.com/@thanvirassif731) 
     * [Learn With Ash - Tamil](https://www.youtube.com/@learnwithashtamil7)
 
-- Book 1:1 guidance via **[Topmate](https://topmate.io/thanvir_assif/)**
-
 Stay tuned for more courses and tutorials!
 
 ---
