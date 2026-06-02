@@ -15,6 +15,11 @@ app.use('/api/auth', authRoutes);
 const dataRoutes = require('./routes/data');
 app.use('/api/data', dataRoutes);
 
+// Health check endpoint
+app.get('/health', (req, res) => {
+  res.status(200).send('ok');
+});
+
 // Connect to MongoDB
 mongoose.connect(process.env.MONGODB_URI)
   .then(() => console.log('Connected to MongoDB'))

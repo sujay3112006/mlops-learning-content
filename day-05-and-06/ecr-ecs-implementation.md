@@ -234,6 +234,25 @@ An ECS Service keeps your task running and restarts it if it crashes. An ALB (Ap
 
 ---
 
+## Bonus
+
+### For the ALB security group:
+
+**Inbound:**
+- 80 from 0.0.0.0/0
+- optionally 443 from 0.0.0.0/0
+**Outbound:**
+- allow all, or at least to the task SG on 5000
+
+### For the ECS task security group:
+
+**Inbound:**
+- 5000 from the ALB security group ID, not from 0.0.0.0/0
+**Outbound:**
+- allow all, so it can reach MongoDB Atlas and other services
+
+---
+
 ## Phase 7 — Verify Deployment
 
 ### Check ECS Console
