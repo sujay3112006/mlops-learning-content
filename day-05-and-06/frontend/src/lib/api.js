@@ -1,7 +1,8 @@
 import axios from 'axios'
 
 const api = axios.create({
-  baseURL: '/api', // replace the /api to actual api. If you're using ECS, then paste your BE api URL here, e.g. http://your-ecs-endpoint/api 
+  baseURL: process.env.VITE_API_BASE_URL || '/api' // Use environment variable or default to '/api' 
+  // environment variable name to add in env file: VITE_API_BASE_URL=http://localhost:5000/api
 })
 
 export default api
